@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Sirlean.Projeto001.ConsoleApp/obj/Debug
+/.vs
+/Sirlean.Projeto001.Forms/obj/Debug
+/Sirlean.Projeto001.MVC/bin/roslyn
+/Sirlean.Projeto001.MVC/obj/Debug

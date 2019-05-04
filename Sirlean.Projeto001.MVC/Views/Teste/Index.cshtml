@@ -1,0 +1,42 @@
+﻿@model Sirlean.Projeto001.MVC.Models.TesteViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+    <div>
+        <h4>Digite seu nome!</h4>
+
+        @*
+            ComentarioServer: 
+            HtmlHelper server para produzir/inserir elementos html no documento.
+        *@
+
+        <!--
+            ComentarioClient:
+            H1tmlHelper server para produzir/inserir elementos html no documento.
+        -->
+
+        @Html.ActionLink("Meu link", "Create")
+        <hr />
+        @using (Html.BeginForm())
+        {
+            <div>
+                @Html.TextBoxFor(model => model.Entrada)
+            </div>
+            <div>
+                <input type="submit" value="Acao" />
+            </div>
+        }
+        <hr />
+        <div>
+            @Html.ValueFor(model => model.Texto)
+        </div>
+    </div>
+
+</body>
+</html>
